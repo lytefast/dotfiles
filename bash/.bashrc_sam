@@ -1,0 +1,7 @@
+EDITOR=vim
+
+alias datThunderboltGamma="xrandr --current --output DP1 --gamma 1.1:1.1:1.1 --brightness 1.02"
+alias datNetworkManager="sudo service network-manager restart"
+alias datIBusRestart='ibus-daemon -rd'
+alias datGitStats='git shortlog -sne --since=3.month'
+
