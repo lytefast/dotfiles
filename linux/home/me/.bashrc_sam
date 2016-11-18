@@ -1,8 +1,12 @@
 EDITOR=vim
 
 # Aliases
-alias datNetworkManager="sudo service network-manager restart"
+alias datNetworkManager='sudo service network-manager restart'
 alias datIBusRestart='ibus-daemon -rd'
 alias datGitStats='git shortlog -sne --since=3.month'
 # Used for apple #alias datThunderboltGamma="xrandr --current --output DP1 --gamma 1.1:1.1:1.1 --brightness 1.02"
+# example of function (see http://stackoverflow.com/a/30357877)
+# but using redirect is better :)
+# alias datGifGenerator='__f() { unset -f $0; echo "== params $1 $2"; ffmpeg -t 5 -i $1 -r 5 "$2"; }; __f'
+alias datGifGenerator='cat <<< '\''ffmpeg -t 5 -i $1 -r 5 "$2"'\'' | source /dev/stdin'
 
