@@ -6,6 +6,3 @@ alias datIBusRestart='ibus-daemon -rd'
 alias datGitStats='git shortlog -sne --since=3.month'
 # Used for apple #alias datThunderboltGamma="xrandr --current --output DP1 --gamma 1.1:1.1:1.1 --brightness 1.02"
 
-# Git aliases
-git config --global alias.lg "log --color --graph --pretty=format:'%C(red)%h%Creset %C(bold blue)<%an>%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)' --abbrev-commit"
-
