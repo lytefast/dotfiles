@@ -1,0 +1,40 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "workbench.colorTheme": "One Monokai",
+    "workbench.iconTheme": "material-icon-theme",
+    "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
+    "files.autoSave": "off",
+    "files.associations": {
+        "*.mjml": "html",
+        "*.css": "postcss",
+        "*.styl": "postcss"
+    },
+    "files.exclude": {
+        "**/.git": true, // this is a default value
+        "**/.DS_Store": true, // this is a default value
+        "**/node_modules": true, // this excludes all folders 
+        // named "node_modules" from 
+        // the explore tree
+        "**/*.class": true,
+        "**/*.pyc": true,
+        "**/.idea": true
+    },
+    // "python.linting.flake8Enabled": true,
+    "python.linting.pep8Enabled": true,
+    "python.linting.pep8Args": [
+        "--max-line-length=100"
+    ],
+    "[python]": {
+        "editor.wordWrapColumn": 120
+    },
+    "editor.tabSize": 2,
+    "editor.rulers": [
+        100,
+        120
+    ],
+    "files.trimTrailingWhitespace": false,
+    "explorer.openEditors.visible": 12,
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": true,
+    "window.zoomLevel": 0
+}
