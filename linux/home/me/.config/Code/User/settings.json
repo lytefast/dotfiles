@@ -3,6 +3,7 @@
     "workbench.colorTheme": "One Monokai",
     "workbench.iconTheme": "material-icon-theme",
     "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
+
     "files.autoSave": "off",
     "files.associations": {
         "*.mjml": "html",
@@ -19,6 +20,18 @@
         "**/*.pyc": true,
         "**/.idea": true
     },
+    "files.trimTrailingWhitespace": false,
+
+    "explorer.openEditors.visible": 10,
+    "editor.fontSize": 12,
+    "editor.tabSize": 2,
+    "editor.rulers": [
+        100,
+        120
+    ],
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": true,
+
     // "python.linting.flake8Enabled": true,
     "python.linting.pep8Enabled": true,
     "python.linting.pep8Args": [
@@ -27,14 +40,11 @@
     "[python]": {
         "editor.wordWrapColumn": 120
     },
-    "editor.tabSize": 2,
-    "editor.rulers": [
-        100,
-        120
-    ],
-    "files.trimTrailingWhitespace": false,
-    "explorer.openEditors.visible": 12,
-    "editor.renderWhitespace": "all",
-    "editor.renderControlCharacters": true,
-    "window.zoomLevel": 0
+
+    // Prettier
+    "prettier.singleQuote": true,
+    "prettier.jsxBracketSameLine": true,
+    "prettier.printWidth": 120,
+    "prettier.bracketSpacing": false,
+    "prettier.trailingComma": "es5",
 }
