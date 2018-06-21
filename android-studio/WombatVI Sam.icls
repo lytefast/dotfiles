@@ -1,10 +1,10 @@
 <scheme name="WombatVI Sam" version="142" parent_scheme="Default">
-  <option name="FONT_SCALE" value="1.0833334" />
+  <option name="FONT_SCALE" value="1.0" />
   <metaInfo>
-    <property name="created">2018-06-06T14:19:21</property>
+    <property name="created">2019-09-16T13:23:13</property>
     <property name="ide">AndroidStudio</property>
-    <property name="ideVersion">3.1.2.0</property>
-    <property name="modified">2018-06-06T14:19:23</property>
+    <property name="ideVersion">3.5.0.21</property>
+    <property name="modified">2019-09-16T13:23:18</property>
     <property name="originalScheme">WombatVI Sam</property>
   </metaInfo>
   <option name="LINE_SPACING" value="1.2" />
@@ -480,7 +480,7 @@
     </option>
     <option name="IDENTIFIER_UNDER_CARET_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="616161" />
+        <option name="BACKGROUND" value="16252f" />
         <option name="EFFECT_COLOR" value="ffffff" />
         <option name="ERROR_STRIPE_COLOR" value="616161" />
       </value>
@@ -742,13 +742,18 @@
     </option>
     <option name="LOGCAT_ERROR_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="ec6a58" />
+        <option name="FOREGROUND" value="f08080" />
       </value>
     </option>
     <option name="LOGCAT_VERBOSE_OUTPUT">
       <value>
         <option name="FOREGROUND" value="2070a8" />
         <option name="BACKGROUND" value="242424" />
+      </value>
+    </option>
+    <option name="LOGCAT_WARNING_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="f0e14d" />
       </value>
     </option>
     <option name="LOG_ERROR_OUTPUT">
@@ -914,6 +919,7 @@
     </option>
     <option name="WRITE_IDENTIFIER_UNDER_CARET_ATTRIBUTES">
       <value>
+        <option name="FOREGROUND" value="3c3f41" />
         <option name="BACKGROUND" value="948567" />
         <option name="ERROR_STRIPE_COLOR" value="948567" />
       </value>
