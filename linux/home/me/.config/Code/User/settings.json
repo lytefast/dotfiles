@@ -18,7 +18,7 @@
         // the explore tree
         "**/*.class": true,
         "**/*.pyc": true,
-        "**/.idea": true
+        "**/*.idea": true
     },
     "files.trimTrailingWhitespace": false,
 
@@ -47,4 +47,10 @@
     "prettier.printWidth": 120,
     "prettier.bracketSpacing": false,
     "prettier.trailingComma": "es5",
+    "window.zoomLevel": 0,
+    "breadcrumbs.enabled": true,
+    "gitlens.defaultDateFormat": "MMM DD, YYYY HH:mm",
+    "editor.fontFamily": "Roboto Mono, DejaVu Sans Mono, 'monospace', monospace, 'Droid Sans Fallback'",
+    "explorer.confirmDelete": false,
+    "workbench.sideBar.location": "left",
 }

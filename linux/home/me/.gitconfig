@@ -1,5 +1,7 @@
 [user]
 	name = Sam S
+	email = lytefast@gmail.com
+
 [alias]
 	lg = log --color --graph --pretty=format:'%C(red)%h%Creset %C(bold blue)<%an>%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)' --abbrev-commit
 	ll = log --color --graph --pretty=format:'%C(red)%h%Creset %C(bold blue)<%an>%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)' --decorate --numstat
@@ -15,3 +17,17 @@
 			fi;\
 		}; f"
 
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+
+[core]
+	editor = vim
+[diff]
+	tool = default-difftool
+[difftool "default-difftool"]
+	cmd = code -n --wait --diff $LOCAL $REMOTE
+# [mergetool "code"]
+#	cmd = code -n --wait $MERGED
+#	trustExitCode = true
+[merge]
+	tool = code
