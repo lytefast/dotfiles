@@ -1,8 +1,11 @@
 USER_NAME="Sam Shih"
 
 EDITOR=vim
-GOPATH=~/go
-PATH=$PATH:$GOPATH/bin
+source ~/.dev_env_rc
+
+# Python virtualenv
+VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+source ~/.local/bin/virtualenvwrapper.sh
 
 # Aliases
 alias less='less -N'

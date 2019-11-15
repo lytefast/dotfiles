@@ -1,0 +1,12 @@
+# == Developer environment setup
+
+GOPATH=~/go
+GOROOT=/usr/local/go
+PATH=$PATH:$GOROOT/bin:GOPATH/bin
+PATH=$PATH:~/.local/bin
+source ~/.cargo/env
+
+export OPENSSL_DIR=/usr/lib/ssl
+export ANDROID_HOME=~/Android/Sdk
+export ANDROID_SDK=~/Android/Sdk
+export ANDROID_NDK_ROOT=$ANDROID_HOME/ndk/20.0.5594570 
