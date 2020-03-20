@@ -99,4 +99,9 @@
         "command": "deleteWordPartRight",
         "when": "textInputFocus && !editorReadonly"
     },
+    {
+        "key": "ctrl+d",
+        "command": "-editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
 ]
