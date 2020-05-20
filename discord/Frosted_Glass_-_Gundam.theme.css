@@ -1,0 +1,42 @@
+/**
+ * @name Frosted Glass
+ * @author Gibbu#1211
+ * @version 2.0.0
+ * @description Edited with https://gibbu.me/editor/frostedglass | Base theme: Frosted Glass by Gibbu#1211
+ * @invite ZHthyCw
+ * @donate https://paypal.me/IanRGibson
+ * @authorId 174868361040232448
+ * @source https://github.com/Gibbu/BetterDiscord-Themes/tree/master/FrostedGlass
+ * @website https://gibbu.me/editor/frostedglass
+*/
+
+@import url("https://gibbu.github.io/BetterDiscord-Themes/FrostedGlass/base.css");
+@import url("https://discord-custom-covers.github.io/usrbg/snippets/userPopouts.css");
+@import url("https://discord-custom-covers.github.io/usrbg/snippets/modals.css");
+@import url("https://monstrousdev.github.io/themes/addons/user-tags.css");
+@import url("https://gibbu.github.io/BetterDiscord-Themes/addons/windows-titlebar.css");
+
+:root {
+  --background-image: url("https://cdn.discordapp.com/attachments/405496122434650113/674745156171202560/anOBmyZ-gundam-exia-wallpaper.jpg");
+  --background-image-blur: 2px;
+  --popout-modal-image: url("https://cdn.discordapp.com/attachments/712790777918652547/712790972546941058/honeycombik8.jpg");
+  --popout-modal-blur: 2px;
+  --home-button-image: url("https://gibbu.github.io/BetterDiscord-Themes/FrostedGlass/assets/discord.svg");
+  --serverlist-brightness: 0.8;
+  --left-brightness: 0.7;
+  --middle-brightness: 0.48;
+  --right-brightness: 0;
+  --popout-modal-brightness: 0.75;
+  --gradient-primary: 3, 169, 244;
+  --gradient-secondary: 63, 81, 181;
+  --gradient-direction: 320deg;
+  --tint-colour: 76, 175, 80;
+  --tint-brightness: 0.05;
+  --window-padding: 0px;
+  --window-roundness: 0px;
+  --scrollbar-colour: rgba(3, 169, 255, 0.6);
+  --link-colour: #00b0f4;
+  --show-gift-gif-buttons: none;
+  --font: "Whitney";
+  --update-notice-1: none;
+}

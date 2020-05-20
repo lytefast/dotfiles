@@ -1,0 +1,85 @@
+.da-chat {
+  margin-left: 4px;
+}
+
+.da-form {
+  flex-direction: column-reverse;
+  margin-top: -16px;
+}
+
+.da-channelTextArea {
+  margin-bottom: 8px;
+}
+
+.da-typing {
+  top: 0px;
+  left: 60px;
+  font-size: 10px;
+}
+
+.da-typing .da-ellipsis.da-dots {
+  height: auto;
+  max-width: 16px;
+}
+
+.da-typing.da-base {
+  line-height: 12px;
+  height: 14px;
+}
+.da-sidebar .da-container .da-selected .da-content {
+  box-shadow: -4px 0px 8px 1px #01fd09;
+}
+
+.da-quickswitcher .da-scroller {
+  min-height: 500px;
+}
+
+/*Based on one monokai theme in vscode*/
+.hljs {
+  color: var(--interactive-hover);
+}
+.hljs-keyword {
+  color: #e06c75;
+}
+.hljs-built_in {
+  color: #1fbf78;
+  font-weight: 600;
+}
+.hljs-literal {
+  color: #5dfff8;
+}
+.hljs-type {
+  color: #61afef;
+}
+.hljs-title {
+  color: #8bcc5b;
+}
+.hljs-params {
+  color: #d19a66;
+}
+.hljs-string {
+  color: #f9d54c;
+}
+.hljs-meta {
+  color: #61afef;
+}
+.hljs-name {
+  color: #e06c75;
+}
+.hljs-attr {
+  color: #98c379;
+}
+
+:root {
+  --channels-default: #a0a8b5;
+  --interactive-normal: #d0daea;
+  --background-primary: #020719b3;
+  --interactive-hover: #acf5d4;
+}
+
+/* Folders */
+#app-mount .da-systemPad.da-scroller .da-expandedFolderBackground {
+  background: #006dca6b;
+  width: 56px;
+  left: 8px;
+}
