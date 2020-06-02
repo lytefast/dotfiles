@@ -1,56 +1,56 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "workbench.colorTheme": "One Monokai",
-    "workbench.iconTheme": "material-icon-theme",
-    "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
+  "workbench.colorTheme": "One Monokai",
+  "workbench.colorCustomizations": {
+    "[One Monokai]": {
+      "activityBar.background": "#16171b",
+      "editor.background": "#21242b",
+      "editorLineNumber.foreground": "#60697a"
+    }
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
 
-    "files.autoSave": "off",
-    "files.associations": {
-        "*.mjml": "html",
-        "*.css": "postcss",
-        "*.styl": "postcss"
-    },
-    "files.exclude": {
-        "**/.git": true, // this is a default value
-        "**/.DS_Store": true, // this is a default value
-        "**/node_modules": true, // this excludes all folders 
-        // named "node_modules" from 
-        // the explore tree
-        "**/*.class": true,
-        "**/*.pyc": true,
-        "**/*.idea": true
-    },
-    "files.trimTrailingWhitespace": false,
+  "files.autoSave": "off",
+  "files.associations": {
+    "*.mjml": "html",
+    "*.css": "postcss",
+    "*.styl": "postcss"
+  },
+  "files.exclude": {
+    "**/.git": true, // this is a default value
+    "**/.DS_Store": true, // this is a default value
+    "**/node_modules": true, // this excludes all folders
+    // named "node_modules" from
+    // the explore tree
+    "**/*.class": true,
+    "**/*.pyc": true,
+    "**/*.idea": true
+  },
 
-    "explorer.openEditors.visible": 10,
-    "editor.fontSize": 12,
-    "editor.tabSize": 2,
-    "editor.rulers": [
-        100,
-        120
-    ],
-    "editor.renderWhitespace": "all",
-    "editor.renderControlCharacters": true,
+  "explorer.openEditors.visible": 10,
+  // "editor.fontSize": 12,
+  "editor.tabSize": 2,
+  "editor.rulers": [100, 120],
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": true,
 
-    // "python.linting.flake8Enabled": true,
-    "python.linting.pep8Enabled": true,
-    "python.linting.pep8Args": [
-        "--max-line-length=100"
-    ],
-    "[python]": {
-        "editor.wordWrapColumn": 120
-    },
+  // "python.linting.flake8Enabled": true,
+  "python.linting.pep8Enabled": true,
+  "python.linting.pep8Args": ["--max-line-length=100"],
+  "[python]": {
+    "editor.wordWrapColumn": 120
+  },
 
-    // Prettier
-    "prettier.singleQuote": true,
-    "prettier.jsxBracketSameLine": true,
-    "prettier.printWidth": 120,
-    "prettier.bracketSpacing": false,
-    "prettier.trailingComma": "es5",
-    "window.zoomLevel": 0,
-    "breadcrumbs.enabled": true,
-    "gitlens.defaultDateFormat": "MMM DD, YYYY HH:mm",
-    "editor.fontFamily": "Roboto Mono, DejaVu Sans Mono, 'monospace', monospace, 'Droid Sans Fallback'",
-    "explorer.confirmDelete": false,
-    "workbench.sideBar.location": "left",
+  // Prettier
+  "prettier.singleQuote": true,
+  "prettier.jsxBracketSameLine": true,
+  "prettier.printWidth": 120,
+  "prettier.bracketSpacing": false,
+  "prettier.trailingComma": "es5",
+  "window.zoomLevel": 0,
+  "breadcrumbs.enabled": true,
+  "gitlens.defaultDateFormat": "MMM DD, YYYY HH:mm",
+  "editor.fontFamily": "Roboto Mono, DejaVu Sans Mono, 'monospace', monospace, 'Droid Sans Fallback'",
+  "explorer.confirmDelete": false
 }
