@@ -16,6 +16,7 @@ alias datIBusRestart='ibus-daemon -rd'
 alias datGitStats='git shortlog -sne --since=3.month'
 alias datGitDelete='git ls-files -o --exclude-standard | xargs rm'
 alias datGitTagClean='git log --tags --simplify-by-decoration --pretty="format:%d" | grep archived | tail -n10 | cut -c 7- | sed "s/)$//" | xargs git tag -d'
+alias datGitPrune='git remote prune origin && git gc --prune --aggressive'
 
 # Used for apple #alias datThunderboltGamma="xrandr --current --output DP1 --gamma 1.1:1.1:1.1 --brightness 1.02"
 # example of function (see http://stackoverflow.com/a/30357877)
