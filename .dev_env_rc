@@ -3,9 +3,9 @@ ETCD_PEERS="http://127.0.0.1:2379"
 
 GOPATH=~/go
 GOROOT=/usr/local/go
-PATH=$PATH:$GOROOT/bin:GOPATH/bin
-PATH=$PATH:~/code/discord/.local/bin
-#source ~/.cargo/env
+PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+PATH=$PATH:~/.local/bin:~/code/discord/.local/bin
+source ~/.cargo/env
 
 #export OPENSSL_DIR=/usr/lib/ssl
 export ANDROID_HOME=~/Android/Sdk
@@ -17,3 +17,13 @@ export ANDROID_NDK_ROOT=$ANDROID_HOME/ndk/latest
 #source /usr/local/bin/virtualenvwrapper_lazy.sh
 
 source ~/.secrets_rc
+
+# Discord specfiic scripts
+pyfmt () {
+        clyde lint python-format `git status --porcelain | grep -v D | grep '.py$' | sed 's/^...//' | xargs`
+}
+pyfmtCommitted () {
+  clyde lint python-format `git diff --name-only origin/main..HEAD | grep -v D | grep '.py$' | xargs`
+}
+
+cd ~/code/discord
