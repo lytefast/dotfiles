@@ -3,10 +3,6 @@ USER_NAME="Sam Shih"
 EDITOR=vim
 source ~/.dev_env_rc
 
-# Python virtualenv
-VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-source ~/.local/bin/virtualenvwrapper.sh
-
 # Aliases
 alias less='less -N'
 alias datNetworkManager='sudo service network-manager restart'

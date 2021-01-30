@@ -11,3 +11,7 @@ source ~/.cargo/env
 export ANDROID_HOME=~/Android/Sdk
 export ANDROID_SDK=~/Android/Sdk
 export ANDROID_NDK_ROOT=$ANDROID_HOME/ndk/latest
+
+# Python virtualenv
+VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+source ~/.local/bin/virtualenvwrapper_lazy.sh
