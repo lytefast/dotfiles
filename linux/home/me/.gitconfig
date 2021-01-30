@@ -3,8 +3,8 @@
 	email = lytefast@gmail.com
 
 [alias]
-	lg = log --color --graph --pretty=format:'%C(red)%h%Creset %C(bold blue)<%an>%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)' --abbrev-commit
-	ll = log --color --graph --pretty=format:'%C(red)%h%Creset %C(bold blue)<%an>%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)' --decorate --numstat
+	lg = log --color --graph --pretty=format:'%C(magenta)%h %C(bold blue)<%an>%C(reset) -%C(yellow)%d%C(reset) %s %C(green)(%cr)' --abbrev=12
+	ll = log --color --graph --pretty=format:'%C(magenta)%h %C(bold blue)<%an>%C(reset) -%C(yellow)%d%C(reset) %s %C(green)(%cr)' --decorate --numstat
 	alias = config --get-regexp ^alias\\.
 	# Get the first matching branch and archive it
 	done = "!f() { \
