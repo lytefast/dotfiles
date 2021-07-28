@@ -1,0 +1,45 @@
+/**
+ * @name Frosted Glass - Gundam
+ * @author Gibbu#1211
+ * @version 2.0.0
+ * @description Display your picture of choice with adjustable blur and brightness. Dark theme is required
+ * @source https://github.com/DiscordStyles/FrostedGlass
+ * @invite ZHthyCw
+ * @donate https://paypal.me/IanRGibson
+ * @website https://gibbu.me
+ * @authorId 174868361040232448
+*/
+
+@import url('https://discordstyles.github.io/FrostedGlass/dist/FrostedGlass.css');
+@import url('https://discordstyles.github.io/Addons/windows-titlebar.css');
+
+:root {
+  --background-image: url('https://cdn.discordapp.com/attachments/405496122434650113/674745156171202560/anOBmyZ-gundam-exia-wallpaper.jpg');
+  --background-image-blur: 2px;
+  --background-image-size: cover;
+  --background-image-position: center;
+  --popout-modal-image: var(--background-image);
+  --popout-modal-blur: 5px;
+  --popout-modal-size: cover;
+  --popout-modal-position: center;
+  --home-button-image: url('https://gibbu.github.io/BetterDiscord-Themes/FrostedGlass/assets/discord.svg');
+  --home-button-size: cover;
+  --home-button-position: center;
+  --serverlist-brightness: 0.9;
+  --left-brightness: 0.8;
+  --middle-brightness: 0.65;
+  --right-brightness: 0.3;
+  --popout-modal-brightness: 0.75;
+  --gradient-primary: 3,169,244;
+  --gradient-secondary: 63,81,181;
+  --gradient-direction: 320deg;
+  --tint-colour: 35, 37, 41;
+  --tint-brightness: 0.05;
+  --window-padding: 0px;
+  --window-roundness: 0px;
+  --scrollbar-colour: rgba(255,255,255,0.61);
+  --link-colour: #00b0f4;
+  --show-gift-gif-buttons: none;
+  --font: 'Whitney';
+  --update-notice-1: none;
+}
