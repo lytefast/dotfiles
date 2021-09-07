@@ -3,8 +3,8 @@
 	email = lytefast@gmail.com
 
 [alias]
-	lg = log --color --graph --pretty=format:'%C(magenta)%h %C(bold blue)<%an>%C(reset) -%C(yellow)%d%C(reset) %s %C(green)(%cr)' --abbrev=12
-	ll = log --color --graph --pretty=format:'%C(magenta)%h %C(bold blue)<%an>%C(reset) -%C(yellow)%d%C(reset) %s %C(green)(%cr)' --decorate --numstat
+	lg = log --color --graph --pretty=format:'%C(red)%h%Creset %C(bold blue)<%an>%Creset \t%C(yellow)%d%Creset %s %Cgreen(%cr)' --abbrev=12
+	ll = log --color --graph --pretty=format:'%C(red)%h%Creset %C(bold blue)<%an>%Creset \t%C(yellow)%d%Creset %s %Cgreen(%cr)' --decorate --numstat
 	alias = config --get-regexp ^alias\\.
 	# Get the first matching branch and archive it
 	done = "!f() { \
@@ -25,7 +25,7 @@
 [diff]
 	tool = default-difftool
 [difftool "default-difftool"]
-	cmd = code -n --wait --diff $LOCAL $REMOTE
+	cmd = code --wait --diff $LOCAL $REMOTE
 # [mergetool "code"]
 #	cmd = code -n --wait $MERGED
 #	trustExitCode = true
