@@ -4,7 +4,7 @@ ETCD_PEERS="http://127.0.0.1:2379"
 GOPATH=~/go
 GOROOT=/usr/local/go
 PATH=$PATH:$GOROOT/bin:GOPATH/bin
-PATH=$PATH:~/.local/bin
+PATH=$PATH:~/.local/bin:~/code/discord/.local/bin
 source ~/.cargo/env
 
 #export OPENSSL_DIR=/usr/lib/ssl
@@ -14,4 +14,6 @@ export ANDROID_NDK_ROOT=$ANDROID_HOME/ndk/latest
 
 # Python virtualenv
 VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-source ~/.local/bin/virtualenvwrapper_lazy.sh
+source /usr/local/bin/virtualenvwrapper_lazy.sh
+
+source ~/.secrets_rc
