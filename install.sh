@@ -17,3 +17,6 @@ ln -sf $dotfiles_dir/.gitconfig ~/.gitconfig
 
 ln -sf $dotfiles_dir/.mplayer ~/.mplayer
 ln -sf $dotfiles_dir/.vimrc ~/.vimrc
+
+echo '== Setup zsh =='
+echo 'see https://github.com/lytefast/prezto'
