@@ -3,20 +3,23 @@ set -e
 
 dotfiles_dir=~/code/dotfiles
 
+set_and_backup_file() {
+  local filename=$1
+  if test -f ~/$filename; then
+    mv ~/$filename ~/$filename.bk
+    echo "$filename.bk created"
+  fi
+  ln -sf $dotfiles_dir/$filename ~/$filename
+}
+
 echo '== Symlinking file in' $dotfiles_dir ' =='
 
 # Symlink config files
-mv ~/.dev_env_rc ~/.dev_env_rc.bk
-ln -sf $dotfiles_dir/.dev_env_rc ~/.dev_env_rc
-
-mv ~/.samrc ~/.samrc.bk
-ln -sf $dotfiles_dir/.samrc ~/.samrc
-
-mv ~/.gitconfig ~/.gitconfig.bk
-ln -sf $dotfiles_dir/.gitconfig ~/.gitconfig
-
-ln -sf $dotfiles_dir/.mplayer ~/.mplayer
-ln -sf $dotfiles_dir/.vimrc ~/.vimrc
+set_and_backup_file .dev_env_rc
+set_and_backup_file .samrc
+set_and_backup_file .gitconfig
+set_and_backup_file .mplayer
+set_and_backup_file .vimrc
 
 echo '== Setup zsh =='
 echo 'see https://github.com/lytefast/prezto'
