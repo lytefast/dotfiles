@@ -1,56 +1,172 @@
 // Place your settings in this file to overwrite the default settings
 {
+  "editor.semanticHighlighting.enabled": true,
   "workbench.colorTheme": "One Monokai",
   "workbench.colorCustomizations": {
     "[One Monokai]": {
       "activityBar.background": "#16171b",
-      "editor.background": "#21242b",
-      "editorLineNumber.foreground": "#60697a"
+      "editor.background": "#1d1f26",
+      "editorLineNumber.foreground": "#44587c"
     }
   },
   "workbench.iconTheme": "material-icon-theme",
   "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
-
   "files.autoSave": "off",
   "files.associations": {
     "*.mjml": "html",
     "*.css": "postcss",
     "*.styl": "postcss"
   },
-  "files.exclude": {
-    "**/.git": true, // this is a default value
-    "**/.DS_Store": true, // this is a default value
-    "**/node_modules": true, // this excludes all folders
-    // named "node_modules" from
-    // the explore tree
-    "**/*.class": true,
-    "**/*.pyc": true,
-    "**/*.idea": true
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true
   },
-
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.gradle": true,
+    "**/*.class": true,
+    "**/*.idea": true,
+    "**/*.iml": true,
+    "**/*.pyc": true,
+    "**/*.yarncache": true,
+    "**/deps": true,
+    "**/node_modules": true
+  },
   "explorer.openEditors.visible": 10,
   // "editor.fontSize": 12,
   "editor.tabSize": 2,
-  "editor.rulers": [100, 120],
+  "editor.rulers": [
+    100,
+    120
+  ],
   "editor.renderWhitespace": "all",
   "editor.renderControlCharacters": true,
-
   // "python.linting.flake8Enabled": true,
-  "python.linting.pep8Enabled": true,
-  "python.linting.pep8Args": ["--max-line-length=100"],
+  // "python.linting.pycodestyleEnabled": true,
+  "python.linting.pycodestyleArgs": [
+    "--max-line-length=120"
+  ],
   "[python]": {
     "editor.wordWrapColumn": 120
   },
-
   // Prettier
   "prettier.singleQuote": true,
   "prettier.jsxBracketSameLine": true,
   "prettier.printWidth": 120,
   "prettier.bracketSpacing": false,
   "prettier.trailingComma": "es5",
-  "window.zoomLevel": 0,
   "breadcrumbs.enabled": true,
   "gitlens.defaultDateFormat": "MMM DD, YYYY HH:mm",
-  "editor.fontFamily": "Roboto Mono, DejaVu Sans Mono, 'monospace', monospace, 'Droid Sans Fallback'",
-  "explorer.confirmDelete": false
+  "editor.fontFamily": "PowerlineSymbols, Roboto Mono, DejaVu Sans Mono, monospace, 'Droid Sans Fallback'",
+  "explorer.confirmDelete": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.shell.linux": "/usr/bin/zsh",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "gitlens.defaultTimeFormat": "hh::mm",
+  "window.zoomLevel": -1,
+  // == Rust ====
+  "rust-analyzer.inlayHints.maxLength": 50,
+  "rust-analyzer.lruCapacity": 99999,
+  "rust-analyzer.rustfmt.enableRangeFormatting": true,
+  "rust-analyzer.assist.importEnforceGranularity": true,
+  "[rust]": {
+    "editor.acceptSuggestionOnCommitCharacter": true,
+    // This has been fixed in newer rust-analyzer versions, so it's good to turn on now. Have not
+    // tried this in TS yet, so just using it in rust for now.
+    "editor.bracketPairColorization.enabled": true,
+    // New feature, will show a ghost of what tab would insert inline.
+    "editor.suggest.preview": true
+  },
+  "editor.semanticTokenColorCustomizations": {
+    "[One Monokai]": {
+      "enabled": true,
+      "rules": {
+        "unresolvedReference": {
+          "foreground": "#f0b0b0", // darker: f35050, dd5c67
+          "fontStyle": "bold underline",
+        },
+        "*.async": {
+          "italic": true
+        },
+        "*.declaration": {
+          "bold": true
+        },
+        "*.reference": {
+          "italic": true
+        },
+        "*.mutable": {
+          "underline": true,
+        },
+        "*.defaultLibrary": {
+          "foreground": "#817cd1",
+          "bold": true
+        },
+      },
+    }
+  },
+  "editor.tokenColorCustomizations": {
+    "[One Monokai]": {
+      "textMateRules": [
+        {
+          "scope": [
+            "entity.name.type.enum",
+            "storage.identifier",
+            "support.class"
+          ],
+          "settings": {
+            "foreground": "#64e7ae"
+          }
+        },
+        {
+          "scope": [
+            "support.type",
+            "support.variable"
+          ],
+          "settings": {
+            "foreground": "#56B6C2",
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": [
+            "entity.name.type.interface",
+            "storage.identifier",
+            "support.class"
+          ],
+          "settings": {
+            "foreground": "#26d2f8",
+            // "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": [
+            "variable.other.property",
+          ],
+          "settings": {
+            "foreground": "#a3cae4",
+          }
+        }
+      ]
+    }
+  },
+  "gitlens.gitCommands.skipConfirmations": [
+    "fetch:command",
+    "switch:command"
+  ],
 }
