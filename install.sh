@@ -21,5 +21,10 @@ set_and_backup_file .gitconfig
 set_and_backup_file .mplayer
 set_and_backup_file .vimrc
 
+set_and_backup_file .config/Code/User/keybindings.json
+set_and_backup_file .config/Code/User/settings.json
+
+set_and_backup_file .config/mpv/mpv.conf
+
 echo '== Setup zsh =='
 echo 'see https://github.com/lytefast/prezto'
