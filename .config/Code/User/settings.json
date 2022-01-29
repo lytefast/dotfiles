@@ -81,11 +81,20 @@
   "gitlens.defaultTimeFormat": "hh::mm",
   "window.zoomLevel": -1,
   // == Rust ====
-  "rust-analyzer.inlayHints.maxLength": 50,
+  "rust-analyzer.inlayHints.maxLength": 120,
   "rust-analyzer.lruCapacity": 99999,
   "rust-analyzer.rustfmt.enableRangeFormatting": true,
   "rust-analyzer.assist.importEnforceGranularity": true,
+  "rust-analyzer.procMacro.ignored": {
+    "async-trait": [
+      "async_trait"
+    ],
+    "tracing-attributes": [
+      "instrument"
+    ]
+  },
   "[rust]": {
+    "editor.wordBasedSuggestions": false,
     "editor.acceptSuggestionOnCommitCharacter": true,
     // This has been fixed in newer rust-analyzer versions, so it's good to turn on now. Have not
     // tried this in TS yet, so just using it in rust for now.
