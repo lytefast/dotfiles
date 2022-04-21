@@ -64,7 +64,24 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "terminal.integrated.shell.linux": "/usr/bin/zsh",
+  // "terminal.integrated.shell.linux": "/usr/bin/zsh",
+  // "terminal.integrated.shell.linux": "flatpak-spawn",
+  // "terminal.integrated.shellArgs.linux": ["--host", "--env=TERM=xterm-256color", "zsh"],
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "path": "bash",
+      "args": ["-l"]
+    },
+    "zsh": {
+      "path": "zsh",
+      "args": ["-l"]
+    },
+    "flatpak zsh": {
+      "path": "flatpak-spawn",
+      "args": ["--host", "--env=TERM=xterm-256color", "zsh"]
+    },
+  },
+  "terminal.integrated.defaultProfile.linux": "zsh",
   "diffEditor.ignoreTrimWhitespace": false,
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
