@@ -28,6 +28,7 @@
     "**/*.class": true,
     "**/*.idea": true,
     "**/*.iml": true,
+    "**/.pytest_cache": true,
     "**/*.pyc": true,
     "**/*.yarncache": true,
     "**/deps": true,
@@ -79,7 +80,6 @@
     "editor.defaultFormatter": "vscode.html-language-features"
   },
   "gitlens.defaultTimeFormat": "hh::mm",
-  "window.zoomLevel": -1,
   // == Rust ====
   "rust-analyzer.inlayHints.maxLength": 120,
   "rust-analyzer.lruCapacity": 99999,
@@ -178,4 +178,5 @@
     "fetch:command",
     "switch:command"
   ],
+  "window.zoomLevel": -1,
 }
