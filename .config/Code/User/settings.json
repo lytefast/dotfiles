@@ -1,16 +1,15 @@
 // Place your settings in this file to overwrite the default settings
 {
   "editor.semanticHighlighting.enabled": true,
-  "workbench.colorTheme": "One Monokai",
-  "workbench.colorCustomizations": {
-    "[One Monokai]": {
-      "activityBar.background": "#16171b",
-      "editor.background": "#1d1f26",
-      "editorLineNumber.foreground": "#44587c"
-    }
-  },
-  "workbench.iconTheme": "material-icon-theme",
-  "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
+  // "editor.fontSize": 12,
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": true,
+  "editor.rulers": [
+    100,
+    120
+  ],
+  "editor.tabSize": 2,
+  "explorer.openEditors.visible": 20,
   "files.autoSave": "off",
   "files.associations": {
     "*.mjml": "html",
@@ -34,15 +33,6 @@
     "**/deps": true,
     "**/node_modules": true
   },
-  "explorer.openEditors.visible": 10,
-  // "editor.fontSize": 12,
-  "editor.tabSize": 2,
-  "editor.rulers": [
-    100,
-    120
-  ],
-  "editor.renderWhitespace": "all",
-  "editor.renderControlCharacters": true,
   // "python.linting.flake8Enabled": true,
   // "python.linting.pycodestyleEnabled": true,
   "python.linting.pycodestyleArgs": [
@@ -70,15 +60,23 @@
   "terminal.integrated.profiles.linux": {
     "bash": {
       "path": "bash",
-      "args": ["-l"]
+      "args": [
+        "-l"
+      ]
     },
     "zsh": {
       "path": "zsh",
-      "args": ["-l"]
+      "args": [
+        "-l"
+      ]
     },
     "flatpak zsh": {
       "path": "flatpak-spawn",
-      "args": ["--host", "--env=TERM=xterm-256color", "zsh"]
+      "args": [
+        "--host",
+        "--env=TERM=xterm-256color",
+        "zsh"
+      ]
     },
   },
   "terminal.integrated.defaultProfile.linux": "zsh",
@@ -99,9 +97,6 @@
   "gitlens.defaultTimeFormat": "hh::mm",
   // == Rust ====
   "rust-analyzer.inlayHints.maxLength": 120,
-  "rust-analyzer.lruCapacity": 99999,
-  "rust-analyzer.rustfmt.enableRangeFormatting": true,
-  "rust-analyzer.assist.importEnforceGranularity": true,
   "rust-analyzer.procMacro.ignored": {
     "async-trait": [
       "async_trait"
@@ -195,5 +190,27 @@
     "fetch:command",
     "switch:command"
   ],
+  "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
+  "workbench.colorTheme": "One Monokai",
+  "workbench.colorCustomizations": {
+    "[One Monokai]": {
+      "editorInlayHint.foreground": "#a1bbeb80",
+      "editorInlayHint.background": "#0000003A",
+      // "editorInlayHint.parameterBackground": "#00000080",
+      // "editorInlayHint.typeBackground": "#00000080",
+      "activityBar.background": "#16171b",
+      "editor.background": "#1d1f26",
+      "editorLineNumber.foreground": "#44587c"
+    }
+  },
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.perEditorGroup": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.suggest.preview": true,
+  "editor.quickSuggestionsDelay": 5,
   "window.zoomLevel": -1,
+  "rust-analyzer.imports.granularity.enforce": true,
+  "rust-analyzer.diagnostics.experimental.enable": false,
+  "rust-analyzer.lru.capacity": 99999,
+  "rust-analyzer.rustfmt.rangeFormatting.enable": true,
 }
