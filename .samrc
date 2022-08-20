@@ -19,3 +19,12 @@ alias datGitPrune='git remote prune origin && git gc --prune --aggressive'
 # but using redirect is better :)
 # alias datGifGenerator='__f() { unset -f $0; echo "== params $1 $2"; ffmpeg -t 5 -i $1 -r 5 "$2"; }; __f'
 alias datGifGenerator='cat <<< '\''ffmpeg -t 5 -i $1 -r 5 "$2"'\'' | source /dev/stdin'
+
+
+# Powerline configuration
+if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
+  powerline-daemon -q
+  POWERLINE_BASH_CONTINUATION=1
+  POWERLINE_BASH_SELECT=1
+  source /usr/share/powerline/bindings/bash/powerline.sh
+fi
