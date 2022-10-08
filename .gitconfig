@@ -2,6 +2,9 @@
 	name = Sam S
 	email = lytefast@gmail.com
 
+[init]
+	defaultBranch = main
+
 [alias]
 	lg = log --color --graph --pretty=format:'%C(red)%h%Creset %C(bold blue)<%an>%Creset \t%C(yellow)%d%Creset %s %Cgreen(%cr)' --abbrev=12
 	ll = log --color --graph --pretty=format:'%C(red)%h%Creset %C(bold blue)<%an>%Creset \t%C(yellow)%d%Creset %s %Cgreen(%cr)' --decorate --numstat
