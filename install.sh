@@ -34,5 +34,9 @@ set_and_backup_file .config/Code/User settings.json
 
 set_and_backup_file .config/mpv mpv.conf
 
+# Setup tmux
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+set_and_backup_file "" .tmux.conf
+
 echo '== Setup zsh =='
 echo 'see https://github.com/lytefast/prezto'
