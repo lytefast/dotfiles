@@ -11,14 +11,24 @@
 	alias = config --get-regexp ^alias\\.
 	# Get the first matching branch and archive it
 	done = "!f() { \
-			branch_name=$(git branch | grep "$1" | grep -v master | head -n1 | cut -c 3-); \
-			if [ $branch_name != '' ]; then\
-				echo '== Archiving & Deleting' $branch_name; \
-				git tag archived/$branch_name $branch_name \
-				&& git branch -D $branch_name; \
-				git tag | grep $branch_name && git branch; \
-			fi;\
-		}; f"
+		branch_name=\"$1\"; \
+		if [ -z \"$branch_name\" ]; then \
+			branch_name=$(git branch --show-current); \
+		fi; \
+		if [ -z \"$branch_name\" ]; then \
+			echo \"No branch specified and no current branch found.\"; \
+			exit 1; \
+		fi; \
+		if [ \"$branch_name\" = \"main\" ]; then \
+			echo \"Refusing to archive 'main' branch.\"; \
+			exit 1; \
+		fi; \
+		git switch main >/dev/null 2>&1; \
+		git tag \"archived/$branch_name\" \"$branch_name\" && git branch -D \"$branch_name\" >/dev/null 2>&1; \
+		echo \"Archived branch $branch_name, current branches:\"; \
+		echo \"\"; \
+		git branch -v; \
+	}; f"
 
 [url "git@github.com:"]
 	insteadOf = https://github.com/
