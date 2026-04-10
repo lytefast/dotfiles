@@ -2,6 +2,7 @@ USER_NAME="Sam Shih"
 
 EDITOR=vim
 source ~/.dev_env_rc
+source ~/.secrets_rc
 
 # Aliases
 alias less='less -N'
