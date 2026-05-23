@@ -26,6 +26,7 @@ echo '== Symlinking files in' $dotfiles_dir ' =='
 # Symlink config files
 set_and_backup_file "" .dev_env_rc
 set_and_backup_file "" .samrc
+set_and_backup_file "" .git-clean-worktree-branches.sh
 set_and_backup_file "" .gitconfig
 set_and_backup_file "" .vimrc
 
