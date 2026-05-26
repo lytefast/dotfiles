@@ -30,6 +30,8 @@ set_and_backup_file "" .git-clean-worktree-branches.sh
 set_and_backup_file "" .gitconfig
 set_and_backup_file "" .vimrc
 
+set_and_backup_file "" .agents
+
 set_and_backup_file .config/Code/User keybindings.json
 set_and_backup_file .config/Code/User settings.json
 
