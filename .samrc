@@ -11,6 +11,10 @@ alias datNetworkManager='sudo service network-manager restart'
 alias datIBusRestart='ibus-daemon -rd'
 
 ## Git
+
+# Complete branch names for the `git done` alias (see .gitconfig), same as `git checkout`.
+_git-done () { _git-branch }
+
 alias datGitStats='git shortlog -sne --since=3.month'
 alias datGitDelete='git ls-files -o --exclude-standard | xargs rm'
 alias datGitTagClean='git log --tags --simplify-by-decoration --pretty="format:%d" | grep archived | tail -n10 | cut -c 7- | sed "s/)$//" | xargs git tag -d'
